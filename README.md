@@ -18,6 +18,7 @@
 
 ### [JavaFactory](https://github.com/JavaFactoryPluginDev/javafactory-plugin) – *LLM 기반 코드 자동 생성 도구*
 - 자연어 패턴 정의 + 어노테이션 기반 참조 → 구현체, 테스트, 픽스처 자동 생성
+- [서비스 레포지토리](https://github.com/JavaFactoryPluginDev/javafactory-plugin)
 - [JetBrains Marketplace 등록](https://plugins.jetbrains.com/plugin/27246-javafactory--pattern-based-llm-code-generator)
 - 데모 비디오 : [400 lines of code in 20s with all test passed](https://www.youtube.com/watch?v=ReBCXKOpW3M)
 
