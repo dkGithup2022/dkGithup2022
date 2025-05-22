@@ -25,6 +25,8 @@
 ### [Dev-Wiki](https://dev-wiki.dev/) – *공식 문서 검색/번역 서비스*
 - LLM 기반 키워드 추출 + 벡터 검색 + 리랭크 조합으로 시맨틱 검색 제공
 - MySQL, Spring 공식 문서 약 4,000건 번역 및 검색 서비스화
+- [시스템 아키텍쳐](https://dev-wiki.dev/reading/tech/6)
+- [데이터 프로세싱](https://dev-wiki.dev/reading/tech/5)
 
 ---
 
