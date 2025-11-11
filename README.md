@@ -4,7 +4,7 @@
 개발자 정보공유를 위한 커뮤니티를 제작하고 있습니다. 
 
 검색에서 유저의 의도와 성향에 맞는 정보를 제공함과 동시에, 서비스 관리에 대한 리소스를 줄이는데에 집중하고 있습니다.  
-운영중인 커뮤니티 사이트는 주 한시간 정도의 투자로 온전히 운영중입니다.  
+
 
 ----
 
@@ -17,9 +17,10 @@
 
 ## 🚀 Projects
 
-### [Dev-Wiki](https://dev-wiki.dev/) – *공식 문서 검색/번역 서비스*
+### [devrunner( 구 Dev-Wiki)](https://devrunner.dev) – *공식 문서 검색/번역 서비스* 
 - LLM 기반 키워드 추출 + 벡터 검색 + 리랭크 조합으로 시맨틱 검색 제공
 - MySQL, Spring 공식 문서 약 4,000건 번역 및 검색 서비스화
+- 9월 기준, 주간 고유 접속자 200+ , 재접속률 60%
 - [시스템 아키텍쳐](https://dev-wiki.dev/reading/tech/6)
 - [데이터 프로세싱](https://dev-wiki.dev/reading/tech/5)
 - [채용정보 검색 & 추천](https://dev-wiki.dev/hirings)
@@ -31,6 +32,8 @@
 - [JetBrains Marketplace 등록](https://plugins.jetbrains.com/plugin/27246-javafactory--pattern-based-llm-code-generator)
 - 데모 비디오 : [400 lines of code in 20s with all test passed](https://www.youtube.com/watch?v=ReBCXKOpW3M)
 
+-> 현재 업데이트 멈췄습니다. claude code 사용이 훨신 낫습니다. 이때의 작업스크립트를 아래 링크에서 claude 코드에서 쓸수 있게 정리합니다. 
+[스크립트모음 & 결과 프로젝트예시](https://github.com/dkGithup2022/claude_code_multimodule_script)
 
 ---
 
@@ -49,11 +52,11 @@ ___
 
 ## 연간 관심사 로그
 
-수술과 치료 이후의 작업내용입니다.
+건강문제로 24.10~25.5에 잠시 치료를 받고 이후의 작업내용
 
 #### 25. 6 : 테스트, 구현체 코드 생성 자동화 , llm  
-intellij 플러그인으로 테스트, 인테페이스에 따른 구현체를 자동생성하는 도구를 만들어 배포했습니다.  
-다운로드 400+ , 해커뉴스 인기글에 오르긴 했지만 mcp 와 claude code 혹은 cursor 조합에 비해 큰 이득이 없다고 생각. 접었습니다.  
+intellij 플러그인으로 테스트, 인테페이스에 따른 구현체를 자동생성하는 도구를 만들어 배포
+다운로드 400+ , 해커뉴스 인기글에 오르긴 했지만 mcp 와 claude code 혹은 cursor 조합에 비해 큰 이득이 없다고 생각. 접었습  
 만약에 이쪽으로 기여를 하거나 제품을 만든다면, [serena mcp](https://github.com/oraios/serena) 처럼 프롬프트 제작에 올바른 래퍼런스를 첨부하는 방향의 기여를 할 것 같습니다.   
 
 지금은 claude code script 로 이떄의 작업을 대체하고 있습니다. 작업링크 : [스크립트모음 & 결과 프로젝트예시](https://github.com/dkGithup2022/claude_code_multimodule_script)
@@ -62,16 +65,21 @@ intellij 플러그인으로 테스트, 인테페이스에 따른 구현체를 �
 
 #### 25.9 : 유저 관심사 반영한 검색 개발, 고전적인 검색 매커니즘 부분 보완 ( percolate query, phrase query, tokeniznig 품질 캐어 )   
 기존 채용 검색에서 "카카오 뱅크" 를 검색 시, "카카오" 혹은 "토스" 의 리소스가 상단에 위치하는 경우를 포착.   
-해당 문제를 해결하기 위해 검색 메커니즘을 개선합니다.
+해당 문제를 해결하기 위해 검색 메커니즘을 개선
 
-채용 검색 시, 두번의 검색을 수행합니다  
+채용 검색 시, 두번의 검색을 수행
 1. 사용자 의도 분석 - percolate query 를 통해 강조할 키워드, 가중치 추출  
 2. 기존 쿼리에 (1) 의 결과 임베드   
 
 디테일한 설명은 [문서](https://dev-wiki.dev/reading/tech/17) 로 남겼습니다.   
 
 
-#### 25.10 : 기존 서비스 홍보 
-지금은 홍보중입니다. 서치콘솔에 문제있어서 서비스 노출안되던거 수정하고 쓰레드, 단톡방 통해서 사이트를 홍보중입니다. 
+#### 25.10 : 기존 서비스 홍보 & 외국으로 채용 큐레이션 서비스 도전.
 
+25.10 기준, 별다른 홍보 없이도 데브위키의 빅테크 큐레이션에서 주간 고유 접속자 200+ , 재접속률 60% + 가 찍힘을 확인. 
+리모트 & 외국인 지원 가능한 직업의  breakin.dev 서비스의 구현 후, 싱가폴 거점으로 배포 .
+
+#### 25.11 
+위의 breakin.dev 가 망함. 여러 가지 요소 고려했을때, 외국인 대상으로 만드는 것은 지금 기획으로는 안된다고 판단.
+그래도 해놓은 것은 아까우니, 이전에 운영중인 서비스를 현재의 코드베이스로 옮기는 작업 수행. devrunner.dev 에서 더 깔끔하고 좋은 코드에서 수행. 
 
