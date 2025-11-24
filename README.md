@@ -20,8 +20,7 @@
 ### [devrunner( 구 Dev-Wiki)](https://devrunner.dev) – *공식 문서 검색/번역 서비스* 
 - LLM 기반 키워드 추출 + 벡터 검색 + 리랭크 조합으로 시맨틱 검색 제공
 - MySQL, Spring 공식 문서 약 4,000건 번역 및 검색 서비스화
-- 9월 기준, 주간 고유 접속자 200+ , 재접속률 60%,
-- 리뉴얼 후, 3일간 고유 조회수 800+, 연속접속 유저 80+ 
+- 11월 기준, 주간 고유 접속자 1000+ , 재접속률 30% 
 - [시스템 아키텍쳐](https://dev-wiki.dev/reading/tech/6)
 - [데이터 프로세싱](https://dev-wiki.dev/reading/tech/5)
 - [채용정보 검색 & 추천](https://dev-wiki.dev/hirings)
